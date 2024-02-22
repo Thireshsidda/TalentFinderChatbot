@@ -48,3 +48,10 @@ pip install -r requirements.txt
 ```
 python TalentFinderChatbot.py
 ```
+
+## Some sample questions to try out:
+
+1. How many experts do we have on MS Word?
+2. Who went to most number of universities and how many did they go to?
+3. Where do most candidates get educated?
+4. How many people know Delphi?
