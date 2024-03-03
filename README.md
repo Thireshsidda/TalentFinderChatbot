@@ -45,16 +45,20 @@ pip install -r requirements.txt
 
 
 
-### Step 4 - Data Preparation 
+### Step 5 - Data Preparation 
 First we need to extract knowledge adhering to the following schema. This is a very simplified schema to denote a Resume.
 ![schema.png](images/schema.png)
 To achieve our Extraction goal as per the schema, we are going to chain a series of prompt as defined in above figure those you can get in `Prompts.py`.
 And then we prepared a pipeline to extract the Entities and Relations by iterate through each 'Resume.txt' file with the help of `gpt-3.5 turbo` base model.
 
 
-### Step 4 - Data Ingestion
+### Step 6 - Data Ingestion
 After extracting the Entities and Relations of each Resume.txt document, we need to ingest the data into a graph database for further query context search purpose. Here we are utilizing the `Neo4j' graph database to leverage the benefits of Knowledge Graphs in our LLM applications for showcasing. Therefore in order to ingest the data here we have prepared a pipeline that consist of two phases: First we need to convert the extracted entities and relations of each Resume document into a Cypher query, second we ingest the data of that Resume document into Neo4j database with the help of this generated Cypher query. Therefore in order to ingest the data into your Neo4j Graph database you just need to setup your Neo4j ID credentials and run 'DataIngestion.py'. Your ingested data might look like this: 
 ![ingested_data.png](images/ingested_data.png)
+
+
+### Step 7 - Data Consumption
+After successfully completing your Data ingestion your data get stored in the format of Knowledge graphs as you can see in above figure. Now your task is to consume related data from your Neo4j database according to your query. So, in order to consume the data we should send the user query to the database in the form of Cypher instead of Natural human language. For that we have followed two phase: First we finetuned a model with some data that you can see in `finetuning` folder in order to generate a Cypher query from User's query, second we consume the data from the Neo4j database with the help of this Cypher query. Therefore in order to consume the data from your Neo4j Graph database you just need to setup your Neo4j ID credentials and run 'DataConsumption.py'.
 
 
 ### Step 5 - Now we can run the app with the command:
