@@ -44,6 +44,12 @@ pip install -r requirements.txt
     NEO4J_PASSWORD = "Foo12345678" #Neo4j Password
 
 
+
+### Step 4 - Data Preparation 
+
+   
+
+
 ### Step 5 - Now we can run the app with the command:
 ```
 python TalentFinderChatbot.py
