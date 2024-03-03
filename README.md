@@ -46,7 +46,12 @@ pip install -r requirements.txt
 
 
 ### Step 4 - Data Preparation 
-
+```
+First we need to extract knowledge adhering to the following schema. This is a very simplified schema to denote a Resume.
+![schema.png](images/schema.png)
+To achieve our Extraction goal as per the schema, we are going to chain a series of prompt as defined in above figure those you can get in `Prompts.py`.
+And then we prepared a pipeline to extract the Entities and Relations by iterate through each 'Resume.txt' file with the help of `gpt-3.5 turbo` base model.
+```
    
 
 
