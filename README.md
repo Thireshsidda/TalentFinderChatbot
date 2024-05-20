@@ -84,3 +84,16 @@ python TalentFinderChatbot.py
 2. Who went to most number of universities and how many did they go to?
 3. Where do most candidates get educated?
 4. How many people know Delphi?
+
+
+
+
+## Author
+
+👤 **Thiresh Sidda**
+
+* LinkedIn: [@ThireshSidda](https://www.linkedin.com/in/thiresh-sidda)
+* GitHub: [@ThireshSidda](https://github.com/Thireshsidda)
+
+
+
