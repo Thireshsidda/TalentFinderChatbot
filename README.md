@@ -1,4 +1,10 @@
+# TalentFinderChatbot
 
+## Intelligent App with Azure OpenAI and Neo4j
+
+### In this we will explore how to leverage Azure OpenAI to build and consume a knowledge graph in Neo4j.
+For this project we parses data from a public [corpus of Resumes / Curriculum Vitae](https://github.com/florex/resume_corpus) using Azure OpenAI `gpt-3.5 turbo` model. The model will be prompted to recognise and extract entities and relationships. We will then generate Neo4j Cypher queries using them and write the data to a Neo4j database.
+We will again use a `gpt-3.5 turbo` model and prompt it to convert questions in english to Cypher - Neo4j's query language, which can be used for data retrieval.
 
 ## Setup
 To get started, we'll need to set up some resources:
